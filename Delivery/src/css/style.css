@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #dca731;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_menu_btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #fff;
+    padding: 15px 0;
+    justify-items: center;
+}
+
+.menu_btn {
+    grid-column: 1;
+    display: flex;
+    gap: 0;
+
+}
+
+.botaoMenu {
+    padding: 12px 15px;
+    background: #F4c237;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    opacity: 0.8;
+}
+
+.botaoMenu:hover {
+    opacity: 1;
+    /* border: 2px solid black; */
+}
+
+#btn_comidas {
+    border-radius: 25px 0 0 25px;
+    /* margin-left: -2px; */
+    border-right: 1px solid black;
+    border-left: 2px solid black;
+}
+
+#btn_bebidas {
+    border-radius: 0 25px 25px 0;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+}
+
+
+
+
+
+.containerComida {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0 20px;
+}
+
+.titulo_cardapio {
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+
+.container_card {
+    margin: 20px;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: auto auto;
+    place-items: center;
+    height: auto;
+    width: 95%;
+    border: 1px solid #1b1b1b;
+    background-color: #fff;
+    box-shadow: -2px 2px 5px gray;
+    border-radius: 15px;
+    padding: 18px;
+
+}
+
+
+.container_card:hover {
+    transform: scale(1.01);
+}
+
+.container_elementos_card {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 60% auto;
+}
+
+.paragrafo_card {
+    text-wrap: wrap;
+    width: 90%;
+}
+
+.container_img_card {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #1b1b1b;
+}
+
+.img_card {
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.titulo_card {
+    font-size: 25px;
+
+}
+
+.btn_card {
+    display: grid;
+    background-color: #FFD700;
+    border: #FFD700 2px solid;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    border: #000000 2px solid;
+    opacity: 0.8;
+}
+
+.btn_card:hover {
+    border: #000000 2px solid;
+    opacity: 1;
+}
+
+.menu {
+    display: none;
+}
+
+.ativa {
+    display: block;
+}
